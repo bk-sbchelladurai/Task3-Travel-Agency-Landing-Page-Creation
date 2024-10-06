@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Agency Landing Page</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Volkhov"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        /* position: sticky; */
+        width: 100%;
+        height: 5, 875px;
+        margin: 0;
+      }
+      header {
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 114px;
+        background-color: #fefcfb;
+      }
+      .nav {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        gap: 100px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        align-items: center;
+      }
+      .nav-bar {
+        height: 24px;
+        display: flex;
+        gap: 170px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        align-items: center;
+      }
+      .logo {
+        padding-left: 110px;
+        height: 24px;
+        align-items: center;
+      }
+      .nav-link {
+        display: flex;
+        gap: 120px;
+        align-items: center;
+      }
+      .menu {
+        height: 24px;
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+        gap: 50px;
+        align-items: center;
+      }
+      .menu a {
+        font-family: "Poppins";
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        color: #222222;
+      }
+      .login {
+        height: 24px;
+      }
+      .login button {
+        font-family: "Poppins";
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        background-color: inherit;
+        color: #fd8d3a;
+        border: none;
+      }
+      .signup {
+        display: flex;
+      }
+      .signup button {
+        width: 160px;
+        height: 50px;
+        font-family: "Poppins";
+        font-size: 16px;
+        font-weight: 100;
+        text-align: center;
+        color: #ffffff;
+        background-color: #fa7436;
+        padding-left: 49.5px;
+        padding-right: 49.5px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        border: none;
+        border-radius: 5px;
+      }
+      main {
+        /* display: flex; */
+        position: relative;
+        top: 0px;
+        width: 100%;
+        height: 5761px;
+        background-color: #ffffff;
+      }
+      .home-page {
+        position: relative;
+        top: 0px;
+        width: 100%;
+        height: 885px;
+      }
+      .discover-content {
+        display: inline-block;
+        position: absolute;
+        top: 96px;
+        left: 110px;
+        width: 521px;
+        height: 486px;
+        margin: 0;
+      }
+      .content > p {
+        position: relative;
+        font-family: "Volkhov";
+        font-size: 64px;
+        font-weight: bold;
+        width: 521px;
+        align-content: center;
+        margin: 0;
+        color: #222222;
+      }
+      .highlight {
+        color: #fa7436;
+      }
+      .experience-guide > p {
+        position: relative;
+        top: 20px;
+        font-family: "Poppins";
+        color: #666666;
+        font-size: 20px;
+        font-weight: 100;
+        width: 497px;
+        height: 120px;
+        align-content: center;
+        margin: 0;
+      }
+      #discover {
+        position: relative;
+        top: 60px;
+        font-family: "Poppins";
+        font-size: 18px;
+        font-weight: 500;
+        color: #fa7436;
+        background-color: #ffffff;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-left: 28px;
+        padding-right: 28px;
+        border-color: #fa7436;
+        border-radius: 10px;
+      }
+      .tourist-image {
+        position: absolute;
+        top: 55px;
+        left: 800px;
+        width: 500px;
+        height: 530px;
+        margin: 0;
+        padding: 0;
+      }
+      .award {
+        display: flex;
+        justify-content: space-between;
+        width: 120px;
+        height: 66px;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        border: #ffffff;
+        position: absolute;
+        top: 142px;
+        left: 740px;
+        align-items: center;
+      }
+      .award > img {
+        width: 32px;
+        height: 32px;
+      }
+      .award > p {
+        font-family: "poppins";
+        font-size: 16px;
+        font-weight: bold;
+        width: 76px;
+        height: 48px;
+        margin: 0px;
+        color: #444444;
+      }
+      .review {
+        display: flex;
+        justify-content: space-between;
+        width: 155px;
+        height: 44px;
+        padding-left: 18.5px;
+        padding-right: 18.5px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        border: #ffffff;
+        position: absolute;
+        top: 385px;
+        left: 780px;
+        align-items: center;
+      }
+      .review > img {
+        width: 32px;
+        height: 32px;
+      }
+      .review > p {
+        font-family: "poppins";
+        font-size: 16px;
+        font-weight: bold;
+        width: 113px;
+        height: 44px;
+        margin: 0px;
+        color: #444444;
+      }
+      .customer-rev {
+        font-family: "poppins";
+        color: #666666;
+        font-size: 12px;
+      }
+      .explore-map {
+        display: flex;
+        justify-content: space-between;
+        width: 143px;
+        height: 74px;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        border: #ffffff;
+        position: absolute;
+        top: 265px;
+        left: 1125px;
+        align-items: center;
+      }
+      .explore-map > img {
+        width: 32px;
+        height: 32px;
+      }
+      .explore-map > p {
+        font-family: "poppins";
+        font-size: 16px;
+        font-weight: bold;
+        width: 101px;
+        height: 74px;
+        margin: 0px;
+        color: #444444;
+      }
+      .map-content {
+        font-family: "poppins";
+        color: #666666;
+        font-size: 12px;
+      }
+      .explore {
+        position: relative;
+        top: 700px;
+        left: 275px;
+        display: flex;
+        background-color: white;
+        border-radius: 16px;
+        width: 793px;
+        height: 60px;
+        align-items: center;
+        align-content: space-between;
+        justify-content: space-between;
+      }
+
+      .location-selection {
+        width: 126px;
+        height: 52px;
+      }
+
+      .date-selection {
+        width: 101px;
+        height: 52px;
+      }
+
+      .guest-selection {
+        width: 105px;
+        height: 52px;
+      }
+
+      .explore h3 {
+        font-family: "poppins";
+        font-size: 16px;
+        font-weight: bold;
+        color: #222222;
+        display: inline;
+      }
+      .explore p {
+        font-family: "poppins";
+        font-size: 12px;
+        font-weight: 100;
+        color: #666666;
+      }
+
+      .explore i {
+        color: #fa7436;
+        font-size: 20px;
+      }
+
+      .explore-btn {
+        width: 165px;
+        height: 60px;
+        font-family: "Poppins";
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+        color: #ffffff;
+        background-color: #fa7436;
+        border: none;
+        border-radius: 5px;
+      }
+      .things-to-do {
+        display: flex;
+        width: 100%;
+        height: 724px;
+        background-color: #f7f8fc;
+      }
+      .things-content {
+        position: relative;
+        top: 120px;
+        left: 434px;
+        width: 521px;
+        height: 142px;
+        margin-bottom: 0px;
+      }
+      .bold {
+        font-family: "Volkhov";
+        font-size: 48px;
+        width: 521px;
+        height: 64px;
+        font-weight: bold;
+        color: #222222;
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+        /* margin-bottom: 48px; */
+      }
+      .normal {
+        font-family: "poppins";
+        font-size: 18px;
+        width: 482px;
+        height: 64px;
+        text-align: center;
+        padding-left: 19.5px;
+        font-weight: 100;
+        color: #666666;
+        padding: top 15px;
+        margin-bottom: 0px;
+      }
+      .flight-pic {
+        position: relative;
+        top: 120px;
+        left: 514px;
+      }
+      .sign-up-thing {
+        position: relative;
+        top: 250px;
+        width: 370px;
+        height: 278px;
+        align-items: center;
+        align-content: space-around;
+        background-color: #ffffff;
+        border-radius: 10px;
+      }
+      .sign-up {
+        font-family: "poppins";
+        font-size: 24px;
+        font-weight: bold;
+        color: #222222;
+      }
+      .signup-note {
+        font-family: "poppins";
+        font-size: 16px;
+        margin: 0px;
+        font-weight: 100;
+        color: #666666;
+        width: 290px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <div class="nav-bar">
+          <nav class="logo">
+            <img src="images/logo.png" alt="logo" />
+          </nav>
+          <div class="nav-link">
+            <div class="menu">
+              <nav class="home">
+                <a href="#home">Home</a>
+              </nav>
+              <nav class="about">
+                <a href="#about">About</a>
+              </nav>
+              <nav class="destination">
+                <a href="#destination">Destination</a>
+              </nav>
+              <nav class="tour">
+                <a href="#tour">Tour</a>
+              </nav>
+              <nav class="blog">
+                <a href="#blog">Blog</a>
+              </nav>
+            </div>
+            <nav class="login">
+              <button id="loginbt">Login</button>
+            </nav>
+          </div>
+        </div>
+        <div class="signup">
+          <nav class="sign-up">
+            <button id="signupbt">Sign up</button>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- home page -->
+      <section class="home-page">
+        <div class="discover-content">
+          <div class="content">
+            <p>
+              Get started your exciting
+              <span class="highlight">journey</span> with us.
+            </p>
+          </div>
+          <div class="experience-guide">
+            <p>
+              A Team of experienced tourism professionals will provide you with
+              the best advice and tips for your desire place.
+            </p>
+          </div>
+          <div class="discover-button">
+            <button id="discover">Discover Now</button>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="tourist-image">
+            <img src="images/tourist-image.png" alt="tourist-image-image" />
+          </div>
+          <div class="award">
+            <img class="trophy" src="images/trophy.png" alt="award" />
+            <p>Best Tour Awards</p>
+          </div>
+          <div class="review">
+            <img
+              class="review-star"
+              src="images/review-star.png"
+              alt="review"
+            />
+            <p>27K<br /><span class="customer-rev">Customer Reviewd</span></p>
+          </div>
+          <div class="explore-map">
+            <img
+              class="google-map"
+              src="images/google-maps.png"
+              alt="explore-map"
+            />
+            <p>
+              Explore <br /><span class="map-content"
+                >Every corner of the world with us</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="explore">
+          <div class="location-selection">
+            <h3>Location</h3>
+            <i class="fa-solid fa-angle-down"></i>
+            <p>Where are You going</p>
+          </div>
+          <div class="date-selection">
+            <h3>Date</h3>
+            <i class="fa-solid fa-angle-down"></i>
+            <p>When will You go</p>
+          </div>
+          <div class="guest-selection">
+            <h3>Guests</h3>
+            <i class="fa-solid fa-angle-down"></i>
+            <p>Number of Guest</p>
+          </div>
+          <button class="explore-btn">Explore Now</button>
+        </div>
+      </section>
+      <section class="things-to-do">
+        <div class="things-content">
+          <p class="bold">
+            Things you need <span class="highlight">to do</span>
+          </p>
+          <p class="normal">
+            We ensure that you'll embark on a perfectly planned, safe vacation
+            at a price you can afford.
+          </p>
+        </div>
+        <div class="flight-pic">
+          <img src="images/flight-pic.png" alt="flight-pic" />
+        </div>
+        <div class="steps">
+          <div class="sign-up-thing">
+            <img src="images/Group.png" alt="sign-upp" />
+            <p class="sign-up">Sign Up</p>
+            <p class="signup-note">
+              Complete all the work associated with planning & processing
+            </p>
+          </div>
+          <!-- <div class="thing-card">
+            <img src="Vector.png" alt="Sign Up" />
+            <p>Sign Up</p>
+            <p>Complete all the work associated with planning & processing</p>
+          </div>
+          <div class="thing-card">
+            <img src="Group.png" alt="Sign Up" />
+            <h4>Sign Up</h4>
+            <p>Complete all the work associated with planning & processing</p>
+          </div> -->
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
