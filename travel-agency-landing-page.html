@@ -381,9 +381,23 @@
         top: 120px;
         left: 514px;
       }
+
+      .steps {
+        display: flex;
+        position: absolute;
+        top: 1225px;
+        left: 215px;
+        /* width: 1410px;*/
+        height: 278px;
+        align-items: center;
+        align-content: center;
+        /* gap: 10px; */
+        justify-content: space-between;
+        background-color: #ffffff;
+        border-radius: 10px;
+      }
+
       .sign-up-thing {
-        position: relative;
-        top: 250px;
         width: 370px;
         height: 278px;
         align-items: center;
@@ -405,6 +419,120 @@
         color: #666666;
         width: 290px;
       }
+      .booking {
+        width: 370px;
+        height: 278px;
+        align-items: center;
+        align-content: space-around;
+        background-color: #ffffff;
+        border-radius: 10px;
+      }
+      .book-ing {
+        font-family: "poppins";
+        font-size: 24px;
+        font-weight: bold;
+        color: #222222;
+      }
+      .booking-note {
+        font-family: "poppins";
+        font-size: 16px;
+        margin: 0px;
+        font-weight: 100;
+        color: #666666;
+        width: 290px;
+      }
+      .location-explore {
+        width: 370px;
+        height: 278px;
+        align-items: center;
+        align-content: space-around;
+        background-color: #ffffff;
+        border-radius: 10px;
+      }
+      .loc-explore {
+        font-family: "poppins";
+        font-size: 24px;
+        font-weight: bold;
+        color: #222222;
+      }
+      .loc-explore-note {
+        font-family: "poppins";
+        font-size: 16px;
+        margin: 0px;
+        font-weight: 100;
+        color: #666666;
+        width: 290px;
+      }
+      .deals-discounts {
+        width: 100%;
+        height: 960px;
+      }
+      .deals-discounts-notes {
+        position: relative;
+        left: 358px;
+        top: 120px;
+        align-items: center;
+        align-content: center;
+        width: 675px;
+        height: 142px;
+      }
+      .bold-note {
+        font-family: "Volkhov";
+        font-size: 48px;
+        width: 675px;
+        height: 64px;
+        font-weight: bold;
+        color: #222222;
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+        /* margin-bottom: 48px; */
+      }
+      .normal-note {
+        display: flex;
+        justify-content: center;
+        font-family: "poppins";
+        font-size: 18px;
+        width: 433px;
+        height: 64px;
+        text-align: center;
+        padding-left: 121px;
+        font-weight: 100;
+        color: #666666;
+        padding: top 15px;
+        margin-bottom: 0px;
+      }
+      /*    .madrid-img {
+        position: absolute;
+      }
+      .madrid-btn {
+        position: relative;
+        top: 200px;
+        left: 69px;
+        width: 132px;
+        height: 50px;
+        font-family: "Poppins";
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+        color: #ffffff;
+        background-color: #fa7436;
+        border: none;
+        border-radius: 5px;
+        visibility: hidden;
+      }
+      .madrid-img:hover + .madrid-btn,
+      .madrid-btn:hover {
+        visibility: visible;
+      }
+      .madrid-img:hover + .madrid-img {
+        opacity: 0.2;
+      } */
+
+      /*  .madrid-btn:hover + .madrid-img,
+      .madrid-img:hover {
+        opacity: 0.2;
+      } */
     </style>
   </head>
   <body>
@@ -527,24 +655,46 @@
         </div>
         <div class="steps">
           <div class="sign-up-thing">
-            <img src="images/Group.png" alt="sign-upp" />
+            <img src="images/sign-up.png" alt="sign-upp" />
             <p class="sign-up">Sign Up</p>
             <p class="signup-note">
               Complete all the work associated with planning & processing
             </p>
           </div>
-          <!-- <div class="thing-card">
-            <img src="Vector.png" alt="Sign Up" />
-            <p>Sign Up</p>
-            <p>Complete all the work associated with planning & processing</p>
+          <div class="booking">
+            <img src="images/wallet.png" alt="booking" />
+            <p class="book-ing">Worth of Money</p>
+            <p class="booking-note">
+              After successful access then book from exclusive deals & pricing
+            </p>
           </div>
-          <div class="thing-card">
-            <img src="Group.png" alt="Sign Up" />
-            <h4>Sign Up</h4>
-            <p>Complete all the work associated with planning & processing</p>
-          </div> -->
+          <div class="location-explore">
+            <img src="images/location.png" alt="location-explore" />
+            <p class="loc-explore">Exciting Travel</p>
+            <p class="loc-explore-note">
+              Start and explore a wide range of exciting travel experience.
+            </p>
+          </div>
         </div>
       </section>
+      <!-- <section class="deals-discounts">
+        <div class="deals-discounts-notes">
+          <p class="bold-note">
+            Exclusive <span class="highlight">deals & discounts</span>
+          </p>
+          <p class="normal-note">
+            Discover our fantastic early booking discounts & start planning your
+            journey.
+          </p>
+        </div>
+        <div class="madrid">
+          <img class="madrid-img" src="images/madrid.png" alt="madrid" />
+          <div class="madrid-hover">
+            <div class="background-hover"></div>
+            <button class="madrid-btn">Book Now</button>
+          </div>
+        </div>
+      </section> -->
     </main>
   </body>
 </html>
